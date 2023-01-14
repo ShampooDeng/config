@@ -1,0 +1,34 @@
+#>>> homebrew config >>>
+# caution! this script should be sourced before oh-my-zsh
+# add homebrew to path
+# eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+
+
+## compeletion for homebrew 
+# if type brew &>/dev/null
+# then
+#   FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
+# 
+#   autoload -Uz compinit
+#   compinit
+# fi
+#<<< homebrew config <<< 
+
+
+# >>> fzf config >>>
+[ -f ~/.config/zsh/.fzf.zsh ] && source ~/.config/zsh/.fzf.zsh
+
+export FZF_COMPLETION_TRIGGER='\'
+export FZF_COMPLETION_OPTS='--border --info=inline'
+# <<< fzf config <<<
+
+
+# >>> ranger config >>>
+#set my prefered editor for ranger
+export EDITOR='nvim'
+export RANGER_LOAD_DEFAULT_RC='FALSE'
+# <<< ranger config <<<
+
+
+source ~/.config/zsh/aliases.zsh
+

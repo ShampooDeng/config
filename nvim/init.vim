@@ -1,0 +1,19 @@
+syntax on
+filetype plugin on
+
+set number
+set relativenumber
+set smartindent
+set autoindent
+set shiftwidth=4
+set softtabstop=4
+set ttimeoutlen=100
+set ignorecase
+set smartcase
+set clipboard+=unnamedplus
+
+" >>> key mapping >>>
+noremap ; :
+noremap . >
+noremap , <
+
