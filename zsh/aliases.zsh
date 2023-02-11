@@ -9,5 +9,9 @@ alias da="conda deactivate"
 alias py="python3"
 alias ra="ranger"
 alias lg="lazygit"
-#alias sw="source ./workspace.zsh"
 alias nf="neofetch"
+
+#alias sw="source ./workspace.zsh"
+
+# Ssh kitten
+alias kssh="kitty +kitten ssh"
