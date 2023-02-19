@@ -65,3 +65,5 @@ xdg-terminals.list
 yay
 yelp
 yesplaymusic
+nvim/autoload
+nvim/plugged
