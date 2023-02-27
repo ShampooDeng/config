@@ -1,4 +1,7 @@
 # User config
+# google dns
+8.8.8.8 dns.google
+8.8.4.4 dns.google
 ## pytorch
 185.199.109.153 pytorch.org
 
