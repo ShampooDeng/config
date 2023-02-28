@@ -16,6 +16,7 @@ set clipboard+=unnamedplus
 noremap ; :
 noremap . >
 noremap , <
+imap <C-BS> <Esc>dawa
 
 
 " >>> vim-plug >>>
