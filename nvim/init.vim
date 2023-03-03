@@ -16,7 +16,6 @@ set clipboard+=unnamedplus
 noremap ; :
 noremap . >
 noremap , <
-imap <C-BS> <Esc>dawa
 
 
 " >>> vim-plug >>>
@@ -38,6 +37,8 @@ call plug#end()
 
 if !exists('g:vscode')
     " ordinary Neovim
+    " >>> key mapping >>>
+    imap <C-BS> <Esc>dawa
 else
     " VScode extension
 endif
