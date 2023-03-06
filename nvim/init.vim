@@ -38,7 +38,10 @@ call plug#end()
 if !exists('g:vscode')
     " ordinary Neovim
     " >>> key mapping >>>
-    imap <C-BS> <Esc>dawa
+    " Map Ctrl-Backspace to delete the previous word in insert mode.
+    " solution: https://vim.fandom.com/wiki/Map_Ctrl-Backspace_to_delete_previous_word
+    " noremap! <C-BS> <C-w>
+    imap <C-BS> <C-w>
 else
     " VScode extension
 endif
