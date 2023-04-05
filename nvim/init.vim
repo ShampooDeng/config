@@ -32,11 +32,36 @@ call plug#begin('~/.config/nvim/plugged')
 Plug 'https://github.com/tpope/vim-surround.git'
 Plug g:plugproxy .. 'gcmt/wildfire.vim'
 Plug g:plugproxy .. 'tpope/vim-commentary'
+Plug g:plugproxy .. 'sainnhe/everforest'
 call plug#end()
 
 
+" >>> Colorscheme >>>
+if has('termguicolors')
+  set termguicolors
+endif
+
+" For dark version.
+set background=dark
+
+" For light version.
+" set background=light
+
+" Set contrast.
+" This configuration option should be placed before `colorscheme everforest`.
+" Available values: 'hard', 'medium'(default), 'soft'
+let g:everforest_background = 'medium'
+
+" For better performance
+let g:everforest_better_performance = 1
+
+colorscheme everforest
+
+
+" >>> Config for neovim vscode extension >>>
 if !exists('g:vscode')
     " ordinary Neovim
+
     " >>> key mapping >>>
     " Map Ctrl-Backspace to delete the previous word in insert mode.
     " solution: https://vim.fandom.com/wiki/Map_Ctrl-Backspace_to_delete_previous_word
@@ -45,3 +70,4 @@ if !exists('g:vscode')
 else
     " VScode extension
 endif
+
