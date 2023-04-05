@@ -16,7 +16,8 @@
 
 
 # user config
-bindkey '^H' backward-kill-word
+# TODO:don't know why ctrl+backspace and ctrl+w are binded together
+# bindkey '\b' backward-kill-word
 
 
 # >>> fzf config >>>
