@@ -15,9 +15,12 @@
 #<<< homebrew config <<< 
 
 
-# user config
+# >>> user config >>>
 # TODO:don't know why ctrl+backspace and ctrl+w are binded together
 # bindkey '\b' backward-kill-word
+
+# >>> environment variables >>>
+# export RUST_BACKTRACE=full
 
 
 # >>> fzf config >>>
