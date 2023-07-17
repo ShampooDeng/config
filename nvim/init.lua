@@ -1,17 +1,21 @@
 -- Editor settings
 local opt = vim.opt
+
 opt.syntax = "on"
 opt.number = true
 opt.relativenumber = true
+-- Tabs behavior
 opt.smartindent = true
 opt.autoindent = true
 opt.shiftwidth = 4
-opt.softtabstop = 4
-opt.ttimeoutlen = 100
+opt.tabstop = 4
+-- Search pattern
 opt.ignorecase = true
 opt.smartcase = true
+-- Others
 -- TODO: Shared clipboard through nvim instances.
 opt.clipboard:append({unnamedplus})
+opt.ttimeoutlen = 100
 
 
 -- Keymappings
@@ -28,8 +32,10 @@ end
 
 
 -- Config lazy.nvim
-local plugin_proxy = "https://hub.fgit.ml/"
+local plugin_proxy = "https://hub.fgit.ml/" -- Github proxy
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
+
+-- Check if lazy.nvim is installed
 if not vim.loop.fs_stat(lazypath) then
   vim.fn.system({
     "git",
@@ -54,7 +60,7 @@ require("lazy").setup({
 })
 
 
--- Config colorscheme
+-- Configure colorscheme
 if vim.fn.has("termguicolors") then
     opt.termguicolors = true
 end
