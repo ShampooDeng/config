@@ -41,5 +41,6 @@ else
 		require("plugins.leap"),
 		require("plugins.color_scheme"),
 		require("plugins.lualine"),
+		require("plugins.wilder"),
 	})
 end
