@@ -42,5 +42,6 @@ else
 		require("plugins.color_scheme"),
 		require("plugins.lualine"),
 		require("plugins.wilder"),
+		require("plugins.joshuto"),
 	})
 end
