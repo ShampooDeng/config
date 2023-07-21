@@ -2,10 +2,8 @@ local mode_nv = {"n", "v"}
 local mode_v = {"v"}
 local nmappings = {
     {from = ";", to = ":"},
-    {from = "..", to = ">>"},
-	{from = ",,", to = "<<"},
-	{from = ",", to = "<", mode = mode_v},
-	{from = ".", to = ">", mode = mode_v},
+    {from = ">", to = ">>"},
+	{from = "<", to = "<<"},
 }
 
 for _, mapping in ipairs(nmappings) do
