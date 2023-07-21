@@ -40,5 +40,6 @@ else
 		plugin_proxy .. "gcmt/wildfire.vim",
 		require("plugins.leap"),
 		require("plugins.color_scheme"),
+		require("plugins.lualine"),
 	})
 end
