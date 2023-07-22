@@ -23,7 +23,7 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 -- Make sure to set `mapleader` before lazy so your mappings are correct
-vim.g.mapleader = " " 
+vim.g.mapleader = " "
 
 if vim.g.vscode then
 	-- If running in VSCode extension
@@ -45,6 +45,8 @@ else
 		require("plugins.wilder"),
 		require("plugins.joshuto"),
 		-- require("plugins.snippet"),
+		require("plugins.autopairs"),
+		require("plugins.autocompletion"),
 		require("plugins.lspconfig"),
 	})
 end
