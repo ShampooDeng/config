@@ -1,5 +1,5 @@
 return {
-	plugin_proxy .. "nvim-lualine/lualine.nvim",
+	PLUGIN_PROXY .. "nvim-lualine/lualine.nvim",
 	lazy = false,
 	config = function()
 		-- TODO: Further code arrangement needed.

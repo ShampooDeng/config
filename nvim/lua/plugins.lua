@@ -1,8 +1,8 @@
 -- Config github proxy with global variabel plugin_proxy
-plugin_proxy = ""
+PLUGIN_PROXY = ""
 -- local plugin_proxy = "https://hub.fgit.ml/" -- Github proxy
-if plugin_proxy == nil then
-	plugin_proxy = "https://github.com/"
+if PLUGIN_PROXY == nil then
+	PLUGIN_PROXY = "https://github.com/"
 end
 
 
@@ -15,7 +15,7 @@ if not vim.loop.fs_stat(lazypath) then
     "clone",
     "--filter=blob:none",
     -- "https://github.com/folke/lazy.nvim.git",
-    plugin_proxy .. "folke/lazy.nvim.git",
+    PLUGIN_PROXY .. "folke/lazy.nvim.git",
     "--branch=stable", -- latest stable release
     lazypath,
   })
@@ -28,20 +28,23 @@ vim.g.mapleader = " "
 if vim.g.vscode then
 	-- If running in VSCode extension
 	require("lazy").setup({
-		plugin_proxy .. "tpope/vim-surround",
-		plugin_proxy .. "tpope/vim-commentary",
-		plugin_proxy .. "gcmt/wildfire.vim",
+		PLUGIN_PROXY .. "tpope/vim-surround",
+		PLUGIN_PROXY .. "tpope/vim-commentary",
+		-- plugin_proxy .. "gcmt/wildfire.vim",
+		require("plugins.leap"),
 	})
 else
 	-- Running in ordinary Neovim
 	require("lazy").setup({
-		plugin_proxy .. "tpope/vim-surround",
-		plugin_proxy .. "tpope/vim-commentary",
-		plugin_proxy .. "gcmt/wildfire.vim",
+		PLUGIN_PROXY .. "tpope/vim-surround",
+		PLUGIN_PROXY .. "tpope/vim-commentary",
+		PLUGIN_PROXY .. "gcmt/wildfire.vim",
 		require("plugins.leap"),
 		require("plugins.color_scheme"),
 		require("plugins.lualine"),
 		require("plugins.wilder"),
 		require("plugins.joshuto"),
+		-- require("plugins.snippet"),
+		require("plugins.lspconfig"),
 	})
 end

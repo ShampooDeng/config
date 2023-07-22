@@ -1,7 +1,7 @@
 return {
-	'gelguy/wilder.nvim',
+	PLUGIN_PROXY .. 'gelguy/wilder.nvim',
 	dependencies = {
-		"nvim-tree/nvim-web-devicons",
+		PLUGIN_PROXY .. "nvim-tree/nvim-web-devicons",
 	},
 	keys= {":"},
 	config = function()
