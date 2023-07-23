@@ -1,5 +1,3 @@
--- TODO: config lsp for neovim
-
 local function lsp_zero_config()
 	local lsp = require('lsp-zero').preset({})
 
@@ -13,6 +11,9 @@ local function lsp_zero_config()
 	require('lspconfig').lua_ls.setup(lsp.nvim_lua_ls())
 
 	lsp.setup()
+
+	-- Override settings of nvim-cmp by lsp-zero
+	require("plugins.autocompletion").config()
 end
 
 

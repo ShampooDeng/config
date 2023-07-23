@@ -46,7 +46,7 @@ else
 		require("plugins.joshuto"),
 		-- require("plugins.snippet"),
 		require("plugins.autopairs"),
-		require("plugins.autocompletion"),
+		require("plugins.autocompletion").install,
 		require("plugins.lspconfig"),
 		require("plugins.treesitter"),
 		require("plugins.tabout"), -- Tabout should be loaded after autocompletion.
