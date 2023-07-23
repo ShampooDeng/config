@@ -48,5 +48,7 @@ else
 		require("plugins.autopairs"),
 		require("plugins.autocompletion"),
 		require("plugins.lspconfig"),
+		require("plugins.treesitter"),
+		require("plugins.tabout"), -- Tabout should be loaded after autocompletion.
 	})
 end
