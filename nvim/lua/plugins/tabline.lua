@@ -5,10 +5,10 @@ return {
 		vim.opt.termguicolors = true
 		require("bufferline").setup{
 			options = {
-				-- todo
+				-- TODO
 			},
-			vim.keymap.set("n","gn",":BufferLineCycleNext<CR>"),
-			vim.keymap.set("n","gp",":BufferLineCyclePrev<CR>"),
+			vim.keymap.set("n","gn",":BufferLineCycleNext<CR>",{silent = true}),
+			vim.keymap.set("n","gp",":BufferLineCyclePrev<CR>",{silent = true}),
 		}
 	end
 }

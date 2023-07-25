@@ -1,8 +1,9 @@
 local mode_nv = {"n", "v"}
 local mode_v = {"v"}
+local mode_i = {"i"}
 local nmappings = {
-    {from = ";", to = ":"},
-    {from = ">", to = ">>"},
+	{from = ";", to = ":"},
+	{from = ">", to = ">>"},
 	{from = "<", to = "<<"},
 }
 
