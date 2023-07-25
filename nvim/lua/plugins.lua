@@ -51,5 +51,6 @@ else
 		require("plugins.treesitter"),
 		require("plugins.tabout"), -- Tabout should be loaded after autocompletion.
 		require("plugins.tabline"),
+		require("plugins.lazygit"),
 	})
 end
