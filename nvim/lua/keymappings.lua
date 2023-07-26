@@ -10,3 +10,15 @@ local nmappings = {
 for _, mapping in ipairs(nmappings) do
     vim.keymap.set(mapping.mode or "n", mapping.from, mapping.to, {noremap = true})
 end
+
+-- Running current python file
+vim.api.nvim_create_autocmd("FileType", {
+	pattern = "python",
+	callback = function(args)
+		-- print("entering python file")
+		vim.keymap.set('n', '<F5>', function()
+			vim.cmd("!python "..args.file)
+		end, {})
+  end
+})
+
