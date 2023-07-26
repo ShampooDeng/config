@@ -1,5 +1,13 @@
 local function lsp_zero_config()
-	local lsp = require('lsp-zero').preset({})
+	-- Config lsp_zero_config
+	local lsp = require('lsp-zero').preset({
+		manage_nvim_cmp = {
+			-- Add extra mappings for goto snippet place holder
+			-- and disable <Tab>&<S-Tab> introduced by extra mappings
+			-- in Autocompletion.lua
+			set_extra_mappings = true,
+		}
+	})
 
 	lsp.on_attach(function(client, bufnr)
 		-- see :help lsp-zero-keybindings

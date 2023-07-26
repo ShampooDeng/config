@@ -19,6 +19,13 @@ plugin.config = function ()
 		mapping = {
 			['<C-Space>'] = cmp.mapping.complete(),
 			['<CR>'] = cmp.mapping.confirm({ select = true }),
+			-- Disable Tab and S-Tab function added by lsp-zero extra mappings
+			["<Tab>"] = cmp.mapping(function (fallback)
+				fallback()
+			end, {"i","s"}),
+			["<S-Tab>"] = cmp.mapping(function (fallback)
+				fallback()
+			end, {"i","s"})
 		},
 	})
 
