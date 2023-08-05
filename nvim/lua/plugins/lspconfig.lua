@@ -20,8 +20,19 @@ local function lsp_zero_config()
 
 	lsp.setup()
 
-	-- Override settings of nvim-cmp by lsp-zero
+	-- Override settings of nvim-cmp configed by lsp-zero
 	require("plugins.autocompletion").config()
+
+	-- Lsp keybindings:
+	-- K
+	-- gd
+	-- gD
+	-- gr
+	-- <F2>
+	-- <F3>
+	-- [d
+	-- ]d
+	-- Note: More keybindings related to lsp can be found in https://github.com/VonHeikemen/lsp-zero.nvim/blob/v2.x/doc/md/lsp.md
 end
 
 
