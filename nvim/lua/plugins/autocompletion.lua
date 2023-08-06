@@ -1,5 +1,7 @@
 local plugin = {}
 
+plugin.desc = "cmp's config will be executed after lsp-zero."
+
 plugin.install = {
 	PLUGIN_PROXY .. "hrsh7th/nvim-cmp",
 	dependencies = {
@@ -35,7 +37,7 @@ plugin.config = function()
 		},
 		sources = {
 			{ name = "nvim_lsp" },
-			{ name = "buffer" },
+			-- { name = "buffer" },
 			{ name = "path" },
 			{ name = "luasnip" },
 			{ name = "calc" },
@@ -44,7 +46,7 @@ plugin.config = function()
 			-- Add border to pop out window.
 			-- completion = cmp.config.window.bordered(),
 			-- documentation = cmp.config.window.bordered(),
-		}
+		},
 	})
 
 	-- Autopairs integration

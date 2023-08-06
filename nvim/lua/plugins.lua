@@ -46,7 +46,7 @@ else
 		-- require("plugins.snippet"),
 		require("plugins.autopairs"),
 		require("plugins.autocompletion").install,
-		require("plugins.lspconfig"),
+		require("plugins.lspconf"),
 		require("plugins.treesitter"),
 		require("plugins.tabout"), -- Tabout should be loaded after autocompletion.
 		require("plugins.tabline"),

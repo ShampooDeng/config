@@ -1,7 +1,7 @@
 return {
-    'windwp/nvim-autopairs',
-    event = "InsertEnter",
-    opts = {}, -- this is equalent to setup({}) function
+	'windwp/nvim-autopairs',
+	event = "InsertEnter",
+	opts = {}, -- this is equalent to setup({}) function
 	config = function ()
 		-- ""To overide default keymaps
 		require('nvim-autopairs').setup({
