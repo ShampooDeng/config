@@ -27,7 +27,7 @@ line_number_style = "none"
 sort_method = "natural"
 case_sensitive = false
 directories_first = true
-reverse = false
+reverse = true
 
 [preview]
 # max_preview_size = 2097152                           # 2MB
