@@ -23,10 +23,17 @@
 ##
 ## Meanings of exit codes:
 ##
-## code | meaning    | action of ranger
+## Meanings of exit codes:
+## code | meaning	    | action of joshuto
 ## -----+------------+-------------------------------------------
-## 0    | success    | Display stdout as preview
-## 1    | no preview | Display no preview at all
+## 0	| success	    | Display stdout as preview
+## 1	| no preview	| Display no preview at all
+## 2	| plain text	| Display the plain content of the file
+## 3	| fix width 	| Don't reload when width changes
+## 4	| fix height	| Don't reload when height changes
+## 5	| fix both	    | Don't ever reload
+## 6	| images	    | Display the image `$IMAGE_CACHE_PATH` points to as an image preview
+## 7	| images	    | Display the file directly as an image
 ##
 ## This script is used only as a provider for textual previews.
 ## Image previews are independent from this script.
@@ -44,6 +51,7 @@ set -o noclobber -o noglob -o nounset -o pipefail
 FILE_PATH=""
 PREVIEW_WIDTH=10
 PREVIEW_HEIGHT=10
+IMAGE_CACHE_PATH="~/cache.jpeg"
 
 while [ "$#" -gt 0 ]; do
     case "$1" in
@@ -191,8 +199,7 @@ handle_mime() {
         image/*)
             ## Preview as text conversion
             # exiftool "${FILE_PATH}" && exit 0
-            # exit 1 ;;
-	    exit 5 ;;
+            exit 6 ;;
 
             ## Video and audio
         video/* | audio/*)

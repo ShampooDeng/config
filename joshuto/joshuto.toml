@@ -31,7 +31,8 @@ reverse = true
 
 [preview]
 # max_preview_size = 2097152                           # 2MB
-max_preview_size = 4194304                           # 4MB
+# max_preview_size = 4194304                           # 4MB
+max_preview_size = 6291456                           # 6MB
 preview_script = "~/.config/joshuto/preview_file.sh" # make sure it's marked as executable
 # image preview scripts. Make sure it's also marked as executable
 preview_shown_hook_script = "~/.config/joshuto/on_preview_shown.sh"
