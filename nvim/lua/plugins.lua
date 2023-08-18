@@ -23,6 +23,7 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 -- Make sure to set `mapleader` before lazy so your mappings are correct
+-- vim.g.mapleader = " "
 
 if vim.g.vscode then
 	-- If running in VSCode extension
@@ -46,11 +47,13 @@ else
 		-- require("plugins.snippet"),
 		require("plugins.autopairs"),
 		require("plugins.autocompletion").install,
+		require("plugins.neodev"), -- For neovim development.
 		require("plugins.lspconf"),
 		require("plugins.treesitter"),
 		require("plugins.tabout"), -- Tabout should be loaded after autocompletion.
 		require("plugins.tabline"),
 		require("plugins.lazygit"),
 		require("plugins.indent"),
+		require("plugins.fzf"),
 	})
 end

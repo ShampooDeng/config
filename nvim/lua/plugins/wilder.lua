@@ -30,7 +30,8 @@ return {
 				wilder.cmdline_pipeline({
 					language = 'vim',
 					fuzzy = 1,
-				}), wilder.search_pipeline()
+				}),
+				wilder.search_pipeline()
 			),
 		})
 	end
