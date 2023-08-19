@@ -1,14 +1,8 @@
 local plugin = {}
 
-plugin.desc = "cmp's config will be executed after lsp-zero."
-
 plugin.install = {
 	PLUGIN_PROXY .. "hrsh7th/nvim-cmp",
 	dependencies = {
-		-- PLUGIN_PROXY .. 'neovim/nvim-lspconfig',
-		-- PLUGIN_PROXY .. 'hrsh7th/cmp-nvim-lsp',
-		-- PLUGIN_PROXY .. 'hrsh7th/cmp-buffer',
-		-- PLUGIN_PROXY .. 'hrsh7th/cmp-path',
 		"hrsh7th/cmp-nvim-lsp",
 		"hrsh7th/cmp-buffer",
 		"hrsh7th/cmp-path",
