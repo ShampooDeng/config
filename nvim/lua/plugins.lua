@@ -44,10 +44,10 @@ else
 		require("plugins.lualine"),
 		require("plugins.wilder"),
 		require("plugins.joshuto"),
-		-- require("plugins.snippet"),
+		require("plugins.snippet"),
 		require("plugins.autopairs"),
 		require("plugins.autocompletion").install,
-		require("plugins.neodev"), -- For neovim development.
+		-- require("plugins.neodev"), -- For neovim development.
 		require("plugins.lspconf"),
 		require("plugins.treesitter"),
 		require("plugins.tabout"), -- Tabout should be loaded after autocompletion.
@@ -55,5 +55,6 @@ else
 		require("plugins.lazygit"),
 		require("plugins.indent"),
 		require("plugins.fzf"),
+		require("plugins.hlsearch"),
 	})
 end

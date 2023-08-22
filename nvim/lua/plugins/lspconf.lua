@@ -58,12 +58,13 @@ end
 
 local function config_neodev()
 	require("neodev").setup({
+		-- use default settings.
 		library = {
 			enable = true,
-			runtim = true,
-			type = true,
+			runtime = true,
+			types = true,
 			plugins = true,
-		}
+		},
 	})
 end
 
