@@ -81,6 +81,7 @@ keymap = [
 	{ keys = [ "'" ],		command = ":shell " },
 	{ keys = [ "ctrl+s" ],		command = ":shell zsh" },
 	{ keys = [ "ctrl+n" ],		command = ":shell nvim " },
+	{ keys = [ "ctrl+g" ],		command = ":shell lazygit" },
 	{ keys = [ "m", "k" ],		command = ":mkdir " },
 	{ keys = [ "c", "w" ],		command = ":rename " },
 

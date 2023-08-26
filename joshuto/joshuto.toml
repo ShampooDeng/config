@@ -24,7 +24,7 @@ line_number_style = "none"
 
 [display.sort]
 # lexical, mtime, natural, size, ext
-sort_method = "natural"
+sort_method = "mtime"
 case_sensitive = false
 directories_first = true
 reverse = true
