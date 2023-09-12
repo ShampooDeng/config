@@ -50,16 +50,18 @@ keymap = [
 	{ on = [ "." ], exec = "hidden toggle" },
 	{ on = [ "s" ], exec = "search fd" },
 	{ on = [ "S" ], exec = "search rg" },
-	{ on = [ "<C-s>" ], exec = "search none" },
+	# { on = [ "<C-s>" ], exec = "search none" },
 	{ on = [ "z" ], exec = "jump zoxide" },
 	{ on = [ "<C-f>" ], exec = "jump fzf" },
 	{ on = [ "<C-l>" ], exec = "shell --block lazygit" },
+	{ on = [ "<C-s>" ], exec = "shell --block zsh" },
+	{ on = [ "m", "k" ], exec = "shell 'mkdir '" },
 
 	# Copy
-	{ on = [ "y", "p" ], exec = "copy path" },
-	{ on = [ "y", "d" ], exec = "copy dirname" },
-	{ on = [ "y", "f" ], exec = "copy filename" },
-	{ on = [ "y", "n" ], exec = "copy name_without_ext" },
+	{ on = [ "c", "p" ], exec = "copy path" },
+	{ on = [ "c", "d" ], exec = "copy dirname" },
+	{ on = [ "c", "f" ], exec = "copy filename" },
+	{ on = [ "c", "n" ], exec = "copy name_without_ext" },
 
 	# Sorting
 	{ on = [ ",", "a" ], exec = "sort alphabetical" },
