@@ -52,7 +52,8 @@ else
 		require("plugins.treesitter"),
 		require("plugins.tabout"), -- Tabout should be loaded after autocompletion.
 		require("plugins.tabline"),
-		require("plugins.lazygit"),
+		require("plugins.git").gitsigns,
+		require("plugins.git").lazygit,
 		require("plugins.indent"),
 		require("plugins.fzf"),
 		require("plugins.hlsearch"),
