@@ -3,7 +3,7 @@ return {
 	dependencies = {
 		PLUGIN_PROXY .. "nvim-tree/nvim-web-devicons",
 	},
-	keys= {":"},
+	-- keys= {":"},
 	config = function()
 		local wilder = require('wilder')
 		wilder.setup {
