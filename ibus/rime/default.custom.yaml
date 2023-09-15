@@ -1,0 +1,5 @@
+# Based on https://sh.alynx.one/posts/My-RIME/
+patch:
+  schema_list:
+    - schema: luna_pinyin
+  ascii_composer/good_old_caps_lock: true
