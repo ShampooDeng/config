@@ -20,6 +20,7 @@ archive = [
 ]
 text = [
 	{ exec = 'nvim "$@"', block = true },
+	{ exec = 'sudo nvim "$@"', block = true, display_name = "sudo nvim" },
 ]
 image = [
 	{ exec = 'open "$@"', display_name = "Open" },
