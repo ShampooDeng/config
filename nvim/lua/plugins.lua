@@ -14,8 +14,7 @@ if not vim.loop.fs_stat(lazypath) then
     "git",
     "clone",
     "--filter=blob:none",
-    -- "https://github.com/folke/lazy.nvim.git",
-    PLUGIN_PROXY .. "folke/lazy.nvim.git",
+    "https://github.com/folke/lazy.nvim.git",
     "--branch=stable", -- latest stable release
     lazypath,
   })
@@ -44,10 +43,9 @@ else
 		require("plugins.lualine"),
 		require("plugins.wilder"),
 		require("plugins.joshuto"),
-		require("plugins.snippet"),
+		-- require("plugins.snippet"),
 		require("plugins.autopairs"),
 		require("plugins.autocompletion").install,
-		-- require("plugins.neodev"), -- For neovim development.
 		require("plugins.lspconf"),
 		require("plugins.treesitter"),
 		require("plugins.tabout"), -- Tabout should be loaded after autocompletion.
