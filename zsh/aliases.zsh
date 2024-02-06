@@ -11,7 +11,6 @@ alias ra="ranger"
 alias lg="lazygit"
 alias nf="neofetch"
 alias js="joshuto"
-alias ya="yazi"
 alias docker="sudo docker"
 
 #alias sw="source ./workspace.zsh"
