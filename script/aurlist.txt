@@ -1,0 +1,7 @@
+clash-verge-rev-bin
+paru-git
+rime-ice-git
+yazi-git
+joshuto-git
+nutstore-experimental
+7-zip-full
