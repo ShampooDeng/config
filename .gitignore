@@ -4,9 +4,13 @@
 !/joshuto
 !/yazi
 !/script
+!/kitty
 
 # ibus
 !/ibus
 /ibus/*/
 !ibus/rime/
 ibus/rime/*/
+
+# file
+!.gitignore

@@ -32,8 +32,6 @@ export FZF_COMPLETION_OPTS='--border --info=inline'
 
 
 # >>> ranger config >>>
-#set my prefered editor for ranger
-export EDITOR='nvim'
 export RANGER_LOAD_DEFAULT_RC='FALSE'
 # <<< ranger config <<<
 
@@ -55,6 +53,7 @@ function ya() {
 }
 # <<< yazi config <<<
 
+# envoronment variables
 export EDITOR="nvim"
 
 source ~/.config/zsh/aliases.zsh
