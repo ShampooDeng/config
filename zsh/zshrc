@@ -53,6 +53,10 @@ function ya() {
 }
 # <<< yazi config <<<
 
+# >>> glow config >>>
+[ -f ~/.config/zsh/_glow.zsh ] && source ~/.config/zsh/_glow.zsh
+# <<< glow config <<<
+
 # envoronment variables
 export EDITOR="nvim"
 
