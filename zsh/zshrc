@@ -24,7 +24,7 @@
 
 
 # >>> fzf config >>>
-[ -f ~/.config/zsh/.fzf.zsh ] && source ~/.config/zsh/.fzf.zsh
+[ -f ~/.config/zsh/_fzf.zsh ] && source ~/.config/zsh/_fzf.zsh
 
 export FZF_COMPLETION_TRIGGER='\'
 export FZF_COMPLETION_OPTS='--border --info=inline'
