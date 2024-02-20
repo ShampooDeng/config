@@ -11,6 +11,9 @@ htop
 neofetch
 ranger
 lazygit
+gitui
+glow
+porsmo
 
 ibus-rime
 
