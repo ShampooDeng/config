@@ -12,9 +12,11 @@ alias lg="lazygit"
 alias gu="gitui"
 alias nf="neofetch"
 alias js="joshuto"
-alias docker="sudo docker"
+alias hx="helix"
 
 #alias sw="source ./workspace.zsh"
+# docker
+alias docker="sudo docker"
 
 # Ssh kitten
 alias kssh="kitty +kitten ssh"
