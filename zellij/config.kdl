@@ -1,0 +1,12 @@
+keybinds {
+    // keybinds are divided into modes
+    normal {
+        // bind instructions can include one or more keys (both keys will be bound separately)
+        // bind keys can include one or more actions (all actions will be performed with no sequential guarantees)
+        unbind "Ctrl h" { SwitchToMode "move"; }
+        bind "Ctrl y" { SwitchToMode "move"; }
+    }
+    move {
+        bind "Ctrl y" { SwitchToMode "normal"; }
+    }
+}
