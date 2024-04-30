@@ -13,6 +13,7 @@ alias gu="gitui"
 alias nf="neofetch"
 alias js="joshuto"
 alias hx="helix"
+alias ls="eza"
 
 #alias sw="source ./workspace.zsh"
 # docker

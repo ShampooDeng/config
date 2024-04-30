@@ -15,14 +15,6 @@
 #<<< homebrew config <<< 
 
 
-# >>> user config >>>
-# TODO:don't know why ctrl+backspace and ctrl+w are binded together
-# bindkey '\b' backward-kill-word
-
-# >>> environment variables >>>
-# export RUST_BACKTRACE=full
-
-
 # >>> fzf config >>>
 [ -f ~/.config/zsh/_fzf.zsh ] && source ~/.config/zsh/_fzf.zsh
 
@@ -41,6 +33,7 @@ export RUSTUP_DIST_SERVER="https://rsproxy.cn"
 export RUSTUP_UPDATE_ROOT="https://rsproxy.cn/rustup"
 # <<< rust proxy <<<
 
+
 # >>> yazi config >>>
 # https://yazi-rs.github.io/docs/quick-start/#shell-wrapper
 function ya() {
@@ -53,12 +46,20 @@ function ya() {
 }
 # <<< yazi config <<<
 
+
 # >>> glow config >>>
 [ -f ~/.config/zsh/_glow.zsh ] && source ~/.config/zsh/_glow.zsh
 # <<< glow config <<<
 
-# envoronment variables
-export EDITOR="nvim"
+# >>> zoxide config >>>
+eval "$(zoxide init zsh)"
+# <<< zoxide config <<<
+
+
+# >>> envoronment variables >>>
+# export EDITOR="nvim"
+export EDITOR="/home/shampoo/nvim-linux64/bin/nvim"
+# <<< envoronment variables <<<
 
 source ~/.config/zsh/aliases.zsh
 
