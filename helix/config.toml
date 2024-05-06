@@ -32,4 +32,5 @@ display-inlay-hints = true
 enable = true
 
 [keys.normal]
-";" =  "command_mode" 
+";" = "command_mode" 
+":" = "collapse_selection"
