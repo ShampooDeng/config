@@ -57,8 +57,7 @@ eval "$(zoxide init zsh)"
 
 
 # >>> envoronment variables >>>
-# export EDITOR="nvim"
-export EDITOR="/home/shampoo/nvim-linux64/bin/nvim"
+export EDITOR="nvim"
 # <<< envoronment variables <<<
 
 source ~/.config/zsh/aliases.zsh
