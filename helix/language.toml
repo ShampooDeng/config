@@ -4,7 +4,7 @@ command = "rust-analyzer"
 [[language]]
 name = "rust"
 file-types = ["rs","toml"]
-auto-format = false
+auto-format = true
 indent = {tab-width = 8, unit = "\t"}
 formatter = {command = "rustfmt", args = []}
 language-servers = ["rust-analyzer"]
