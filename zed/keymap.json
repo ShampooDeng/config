@@ -22,7 +22,20 @@
     "context": "Editor",
     "bindings": {
       // "j k": ["workspace::SendKeystrokes", "escape"]
-      "ctrl-j": "workspace::ToggleBottomDock"
+      "ctrl-`": "workspace::ToggleBottomDock",
+      // emacs-like keybindings
+      "ctrl-j": "editor::Newline",
+      "ctrl-k": "editor::NewlineAbove",
+      "ctrl-h": "editor::Backspace",
+      "ctrl-f": "editor::MoveRight",
+      "ctrl-b": "editor::MoveLeft",
+      "ctrl-e": "vim::EndOfLine"
+    }
+  },
+  {
+    "context": "Terminal",
+    "bindings": {
+      "ctrl-`": "workspace::ToggleBottomDock"
     }
   }
 ]

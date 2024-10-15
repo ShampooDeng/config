@@ -25,7 +25,12 @@
     "mode": "system",
     "light": "One Light",
     "dark": "Gruvbox Dark"
-  }
-
+  },
+  "soft_wrap": "editor_width",
+  "inlay_hints": {
+    "enabled": true
+  },
+  "relative_line_numbers": true,
+  "auto_signature_help": true
   // TODO: Check https://zed.dev/docs/languages/rust to configure lsp for rust
 }
