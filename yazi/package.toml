@@ -1,7 +1,7 @@
 [plugin]
 deps = [
-	{ use = "yazi-rs/plugins:git", rev = "7afba3a" },
-	{ use = "Rolv-Apneseth/starship", rev = "247f49d" },
+	{ use = "yazi-rs/plugins:git", rev = "6418698" },
+	{ use = "Rolv-Apneseth/starship", rev = "af8bf6f" },
 ]
 
 [flavor]
