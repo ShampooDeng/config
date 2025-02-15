@@ -1,0 +1,7 @@
+{
+  "Insert cell seperator": {
+    "prefix": "cell",
+    "body": ["# %% ", "$0"],
+    "description": "Insert notebook cell seperator"
+  }
+}

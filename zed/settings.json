@@ -31,6 +31,48 @@
     "enabled": true
   },
   "relative_line_numbers": true,
-  "auto_signature_help": true
+  "auto_signature_help": true,
   // TODO: Check https://zed.dev/docs/languages/rust to configure lsp for rust
+  "languages": {
+    "Markdown": {
+      "enable_language_server": false
+    },
+    "Python": {
+      "enable_language_server": true,
+      "language_servers": ["pyright", "ruff"],
+      "formatter": [
+        {
+          "code_actions": {
+            "source.organizeImports.ruff": true,
+            "source.fixAll.ruff": true
+          }
+        },
+        {
+          "language_server": {
+            "name": "ruff"
+          }
+        }
+      ]
+    }
+  },
+  "lsp": {
+    "ruff": {
+      "initialization_options": {
+        "settings": {
+          // Ruff server settings goes here
+          "lineLength": 80,
+          "lint": {
+            "extendSelect": ["I"]
+          }
+        }
+      }
+    },
+    "pyright": {
+      "settings": {
+        "python.analysis": {
+          "autoImportCompletions": false
+        }
+      }
+    }
+  }
 }

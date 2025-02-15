@@ -9,20 +9,21 @@
   {
     "context": "VimControl && !menu",
     "bindings": {
-      ";": "command_palette::Toggle"
+      ";": "command_palette::Toggle",
+      "g i": "editor::GoToImplementation",
+      "g r": "editor::FindAllReferences"
     }
   },
   {
     "context": "Workspace",
-    "bindings": {
-      // "shift shift": "file_finder::Toggle"
-    }
+    "bindings": {}
   },
   {
     "context": "Editor",
     "bindings": {
       // "j k": ["workspace::SendKeystrokes", "escape"]
       "ctrl-`": "workspace::ToggleBottomDock",
+
       // emacs-like keybindings
       "ctrl-j": "editor::Newline",
       "ctrl-k": "editor::NewlineAbove",
