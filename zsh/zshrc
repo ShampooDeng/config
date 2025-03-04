@@ -41,6 +41,7 @@ function yi() {
 	fi
 	rm -f -- "$tmp"
 }
+bindkey -s "^y" "yi\n"
 
 
 # >>> glow config >>>
