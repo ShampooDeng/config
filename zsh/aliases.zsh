@@ -1,6 +1,5 @@
 alias cl="clear"
 alias nv="nvim"
-alias j="cd"
 alias te="tree -L 2"
 alias et="exit"
 alias ping="ping -c 4"

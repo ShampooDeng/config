@@ -6,7 +6,7 @@
 
 keymap = [
 	# User patch
-	{ on = "<C-g>", run = "shell --block --interactive gitui", desc = "todo"},
+	{ on = "<C-g>", run = "shell --block --interactive gitui", desc = "Invoke gitui at current directory"},
 
 	{ on = "<Esc>", run = "escape",             desc = "Exit visual mode, clear selected, or cancel search" },
 	{ on = "<C-[>", run = "escape",             desc = "Exit visual mode, clear selected, or cancel search" },
