@@ -367,4 +367,9 @@ desc = "Smart filter"
 on   = "l"
 run  = "plugin smart-enter"
 desc = "Enter the child directory, or open the file"
+
+[[manager.prepend_keymap]]
+desc = "Start bunny.yazi"
+on = "g"
+run = "plugin bunny"
 # <<<keymap for plugin<<<
